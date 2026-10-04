@@ -1,100 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Milk Supply Management</title>
-<link rel="stylesheet" href="../css/login.css">
 
+    <link rel="manifest" href="../manifest.json">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="theme-color" content="#2196f3">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Milk Supply Management</title>
+
+    <link rel="stylesheet" href="../css/login.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
 
-<div class="overlay"></div>
+    <div class="overlay"></div>
 
-<div class="login-container">
+    <div class="login-container">
 
-    <div class="login-card">
+        <div class="login-card">
 
-        <div class="logo">
+            <div class="logo">
 
-            <div class="logo-icon">
-                🥛
+                <div class="logo-icon">
+                    🥛
+                </div>
+
+                <h1>Milk Supply</h1>
+
+                <p>Select your role to continue</p>
+
             </div>
 
-            <h1>Milk Supply</h1>
+            <div class="role-selector">
 
-            <p>Select your role to continue</p>
+                <div class="role-card active" id="buyerBtn">
 
-        </div>
+                    <i class="fa-solid fa-user"></i>
 
-        <div class="role-selector">
+                    <h3>Buyer</h3>
 
-            <div class="role-card active" id="buyerBtn">
+                    <span>Customer Login</span>
+
+                </div>
+
+                <div class="role-card" id="sellerBtn">
+
+                    <i class="fa-solid fa-store"></i>
+
+                    <h3>Seller</h3>
+
+                    <span>Admin Login</span>
+
+                </div>
+
+            </div>
+
+            <div class="input-group">
 
                 <i class="fa-solid fa-user"></i>
 
-                <h3>Buyer</h3>
-
-                <span>Customer Login</span>
-
-            </div>
-
-            <div class="role-card" id="sellerBtn">
-
-                <i class="fa-solid fa-store"></i>
-
-                <h3>Seller</h3>
-
-                <span>Admin Login</span>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter Username">
 
             </div>
 
-        </div>
+            <div class="input-group">
 
-        <div class="input-group">
+                <i class="fa-solid fa-lock"></i>
 
-            <i class="fa-solid fa-user"></i>
+                <input
+                    type="password"
+                    id="pass"
+                    placeholder="Enter Password">
 
-            <input
-            type="text"
-            id="name"
-            placeholder="Enter Username">
+            </div>
 
-        </div>
+            <button
+                id="loginbtn"
+                class="login-btn">
 
-        <div class="input-group">
+                Login
 
-            <i class="fa-solid fa-lock"></i>
-
-            <input
-            type="password"
-            id="pass"
-            placeholder="Enter Password">
+            </button>
 
         </div>
 
-        <button
-        id="loginbtn"
-        class="login-btn">
+        <div class="signup-link">
 
-        Login
+            Don't have an account?
 
-        </button>
+            <a href="signup.html">Create Account</a>
+
+        </div>
 
     </div>
 
-<div class="signup-link">
-    Don't have an account?
-    <a href="signup.html">Create Account</a>
-</div>
+    <script src="../js/login.js"></script>
 
-</div>
+    <script>
 
-<script src="../js/login.js"></script>
+        if ("serviceWorker" in navigator) {
+
+            navigator.serviceWorker.register("../sw.js")
+
+                .then(() => {
+
+                    console.log("Service Worker Registered");
+
+                })
+
+                .catch(error => {
+
+                    console.log("Service Worker Error:", error);
+
+                });
+
+        }
+
+    </script>
 
 </body>
+
 </html>
