@@ -5,7 +5,7 @@ console.log("Invoice JS Loaded");
 // =====================================
 
 const INVOICE_API =
-"http://localhost:5000/invoices";
+"https://milk-supply-backend.onrender.com/invoices";
 
 // =====================================
 // ELEMENTS

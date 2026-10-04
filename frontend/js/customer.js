@@ -2,7 +2,7 @@ const customerForm = document.getElementById("customerForm");
 const customerTable = document.getElementById("customerTable");
 const searchBox = document.getElementById("searchBox");
 
-const API_URL = "http://localhost:5000/customers";
+const API_URL = "https://milk-supply-backend.onrender.com/customers";
 
 let customers = [];
 

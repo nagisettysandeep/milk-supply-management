@@ -5,13 +5,13 @@ console.log("Bills JS Loaded");
 // ===============================
 
 const CUSTOMER_API =
-"http://localhost:5000/customers";
+"https://milk-supply-backend.onrender.com/customers";
 
 const MILK_API =
-"http://localhost:5000/milk-entries";
+"https://milk-supply-backend.onrender.com/milk-entries";
 
 const INVOICE_API =
-"http://localhost:5000/invoices";
+"https://milk-supply-backend.onrender.com/invoices";
 
 // ===============================
 // STORE DATA

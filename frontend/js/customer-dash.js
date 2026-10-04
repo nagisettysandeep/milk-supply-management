@@ -145,7 +145,7 @@ async function loadAttendanceHistory() {
 
         const response =
         await fetch(
-        `http://localhost:5000/customer-attendance/${user.id}`
+        `https://milk-supply-backend.onrender.com/customer-attendance/${user.id}`
         );
 
         const data =
@@ -276,7 +276,7 @@ async function loadCustomerBills() {
 
         const response =
         await fetch(
-        `http://localhost:5000/customer-bills/${user.id}`
+        `https://milk-supply-backend.onrender.com/customer-bills/${user.id}`
         );
 
         const bills =
@@ -397,7 +397,7 @@ async () => {
 
         const response =
         await fetch(
-        `http://localhost:5000/customer-bills/${user.id}`
+        `https://milk-supply-backend.onrender.com/customer-bills/${user.id}`
         );
 
         const bills =

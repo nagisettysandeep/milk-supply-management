@@ -165,7 +165,7 @@ async function loginUser(){
 
         const response =
         await fetch(
-        "http://localhost:5000/login",
+        "https://milk-supply-backend.onrender.com/login",
         {
 
             method:"POST",

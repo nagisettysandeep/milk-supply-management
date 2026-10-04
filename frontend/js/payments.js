@@ -1,7 +1,7 @@
 console.log("Payments JS Loaded");
 
 const INVOICE_API =
-"http://localhost:5000/invoices";
+"https://milk-supply-backend.onrender.com/invoices";
 
 const customerName =
 document.getElementById("customerName");

@@ -1,5 +1,5 @@
 const API =
-"http://localhost:5000/signup";
+"https://milk-supply-backend.onrender.com/signup";
 
 document
 .getElementById("signupBtn")

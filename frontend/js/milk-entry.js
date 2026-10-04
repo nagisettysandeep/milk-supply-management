@@ -1,5 +1,5 @@
-const API_CUSTOMERS = "http://localhost:5000/customers";
-const API_MILK_ENTRIES = "http://localhost:5000/milk-entries";
+const API_CUSTOMERS = "https://milk-supply-backend.onrender.com/customers";
+const API_MILK_ENTRIES = "https://milk-supply-backend.onrender.com/milk-entries";
 
 let customers = [];
 let milkEntries = [];
