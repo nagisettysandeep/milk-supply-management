@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Payment Management</title>
+
+    <link rel="stylesheet"
+    href="../css/payment.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="payment-card">
+
+        <a href="dashboard.html"
+        class="back-btn">
+
+            ← Back To Dashboard
+
+        </a>
+
+        <h1>💳 Payment Collection</h1>
+
+        <!-- CUSTOMER DETAILS -->
+
+        <div class="customer-details">
+
+            <h3 id="customerName">
+
+                Loading Customer...
+
+            </h3>
+
+            <p id="customerMobile">
+
+                Mobile Number
+
+            </p>
+
+            <p class="amount-text">
+
+                Bill Amount :
+
+                <strong id="billAmount">
+
+                    ₹0
+
+                </strong>
+
+            </p>
+
+        </div>
+
+        <!-- QR PAYMENT SECTION -->
+
+        <div class="qr-section">
+
+            <h2>📱 Scan & Pay</h2>
+
+            <img
+            id="upiQr"
+            src=""
+            alt="UPI QR Code">
+
+            <p class="upi-id">
+
+                UPI ID :
+
+                <strong>
+
+                    7569148565@ptyes
+
+                </strong>
+
+            </p>
+
+            <button
+            id="payNowBtn"
+            class="pay-btn">
+
+                Pay Using UPI App
+
+            </button>
+
+        </div>
+
+        <!-- PAYMENT STATUS -->
+
+        <div class="status-section">
+
+            <h3>
+
+                Payment Status
+
+            </h3>
+
+            <label>
+
+                <input
+                type="radio"
+                name="paymentStatus"
+                value="Paid">
+
+                Paid
+
+            </label>
+
+            <label>
+
+                <input
+                type="radio"
+                name="paymentStatus"
+                value="Pending"
+                checked>
+
+                Pending
+
+            </label>
+
+        </div>
+
+        <!-- SAVE BUTTON -->
+
+        <button
+        id="savePaymentBtn">
+
+            Save Payment Status
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="../js/payment.js"></script>
+
+</body>
+
+</html>

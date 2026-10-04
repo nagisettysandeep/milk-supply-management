@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management</title>
+
+    <link rel="stylesheet" href="../css/customer.css">
+    
+</head>
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+        <h1>👥 Customer Management</h1>
+        <a href="dashboard.html" class="back-btn">← Dashboard</a>
+    </div>
+
+    <!-- Add Customer Form -->
+
+    <div class="card">
+
+        <h2>Add Customer</h2>
+
+        <form id="customerForm">
+
+            <input type="hidden" id="customerIndex">
+
+            <div class="grid">
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Mobile Number</label>
+                    <input type="text" id="mobile" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Address</label>
+                    <input type="text" id="address">
+                </div>
+
+                <div class="form-group">
+                    <label>Milk Type</label>
+                    <select id="milkType">
+                        <option>Cow</option>
+                        <option>Buffalo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Morning Qty (L)</label>
+                    <input type="number" id="morningQty">
+                </div>
+
+                <div class="form-group">
+                    <label>Evening Qty (L)</label>
+                    <input type="number" id="eveningQty">
+                </div>
+
+                <div class="form-group">
+                    <label>Rate Per Liter</label>
+                    <input type="number" id="rate">
+                </div>
+
+            </div>
+
+            <button type="submit" class="save-btn">
+                Save Customer
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- Customer List -->
+
+    <div class="card">
+
+        <div class="table-header">
+
+            <h2>Customer List</h2>
+
+            <input
+                type="text"
+                id="searchBox"
+                placeholder="Search customer...">
+
+        </div>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Milk Type</th>
+                    <th>Rate</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="customerTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="../js/customer.js"></script>
+
+</body>
+</html>

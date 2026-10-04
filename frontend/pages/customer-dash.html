@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Customer Dashboard</title>
+
+<link rel="stylesheet" href="../css/customer-dash.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>🥛 Milk Supply Dashboard</h1>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <div class="hero-section">
+
+        <div class="hero-left">
+
+            <img
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            class="profile-avatar"
+            alt="Customer">
+
+            <div>
+
+                <h2 id="customerName">
+                    Welcome Customer
+                </h2>
+
+                <p id="todayDate"></p>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <h3>Fresh Milk Delivered Daily 🥛</h3>
+
+            <p>Healthy • Pure • Natural</p>
+
+        </div>
+
+    </div>
+
+    <!-- DASHBOARD CARDS -->
+
+    <div class="dashboard-grid">
+
+        <!-- MILK QUANTITY -->
+
+        <div class="card card1">
+
+            <div class="icon">🥛</div>
+
+            <h3>Milk Quantity</h3>
+
+            <h2 id="milkQty">
+                0 Liters
+            </h2>
+
+        </div>
+
+        <!-- RATE -->
+
+        <div class="card card2">
+
+            <div class="icon">💰</div>
+
+            <h3>Milk Rate</h3>
+
+            <h2>
+                ₹85/Liter
+            </h2>
+
+        </div>
+
+        <!-- TODAY AMOUNT -->
+
+        <div class="card card3">
+
+            <div class="icon">📊</div>
+
+            <h3>Today's Amount</h3>
+
+            <h2 id="todayAmount">
+                ₹0
+            </h2>
+
+        </div>
+
+        <!-- PENDING PAYMENT -->
+
+        <div class="card card4">
+
+            <div class="icon">💳</div>
+
+            <h3>Pending Payment</h3>
+
+            <h2 id="pendingPayment">
+                ₹0
+            </h2>
+
+        </div>
+
+        <!-- MONTHLY BILLS -->
+
+        <div class="card card5">
+
+            <div class="icon">🧾</div>
+
+            <h3>Monthly Bills</h3>
+
+            <button id="viewBillsBtn">
+
+                View Bills
+
+            </button>
+
+        </div>
+
+        <!-- ATTENDANCE HISTORY -->
+
+        <div class="card card6">
+
+            <div class="icon">📅</div>
+
+            <h3>Attendance History</h3>
+
+            <button id="viewAttendanceBtn">
+
+                View History
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- CUSTOMER DETAILS -->
+
+    <div class="details-card">
+
+        <h2>👤 Customer Information</h2>
+
+        <p>
+            <strong>Name :</strong>
+            <span id="customerFullName"></span>
+        </p>
+
+        <p>
+            <strong>Phone :</strong>
+            <span id="phone"></span>
+        </p>
+
+        <p>
+            <strong>Address :</strong>
+            <span id="address"></span>
+        </p>
+
+    </div>
+
+    <!-- ATTENDANCE HISTORY -->
+
+    <div
+    class="attendance-history"
+    id="attendanceHistory"
+    style="display:none;">
+
+        <h2>📅 Attendance History</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Date</th>
+
+                    <th>Status</th>
+
+                    <th>Milk Qty</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="attendanceTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- CUSTOMER BILLS -->
+
+    <div
+    class="attendance-history"
+    id="billHistory"
+    style="display:none;">
+
+        <h2>🧾 Customer Bills</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Invoice No</th>
+
+                    <th>Bill Date</th>
+
+                    <th>Amount</th>
+
+                    <th>Status</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="billTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="../js/customer-dash.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Create Account</title>
+
+<link rel="stylesheet"
+href="../css/signup.css">
+
+
+</head>
+
+<body>
+
+<div class="signup-container">
+
+    <div class="signup-card">
+
+        <h1>🥛 Milk Supply System</h1>
+
+        <p class="subtitle">
+            Create Your Account
+        </p>
+
+        <!-- USERNAME -->
+
+        <input
+        type="text"
+        id="username"
+        placeholder="Enter Username">
+
+        <!-- PASSWORD -->
+
+        <input
+        type="password"
+        id="password"
+        placeholder="Enter Password">
+
+        <!-- PHONE -->
+
+        <input
+        type="text"
+        id="phone"
+        placeholder="Enter Phone Number">
+
+        <!-- ADDRESS -->
+
+        <input
+        type="text"
+        id="address"
+        placeholder="Enter Address">
+
+        <!-- DAILY MILK -->
+
+        <input
+        type="number"
+        id="milk"
+        min="0"
+        placeholder="Daily Milk Requirement (Liters)">
+
+        <!-- CUSTOMER TYPE -->
+
+        <select id="customerType">
+
+            <option value="customer">
+                Customer (₹85 / Liter)
+            </option>
+
+            <option value="dairy">
+                Dairy Farm (₹70 / Liter)
+            </option>
+
+        </select>
+
+        <!-- BUTTON -->
+
+        <button id="signupBtn">
+
+            Create Account
+
+        </button>
+
+        <!-- LOGIN LINK -->
+
+        <div class="login-link">
+
+            Already have an account?
+
+            <a href="login.html">
+
+                Login Here
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../js/signup.js"></script>
+
+</body>
+
+</html>

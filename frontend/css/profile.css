@@ -1,0 +1,26 @@
+body{
+    background:#f4f6fb;
+    font-family:Segoe UI;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card{
+    background:white;
+    width:500px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+h1{
+    color:#032d6c;
+    margin-bottom:20px;
+}
+
+p{
+    margin:12px 0;
+    font-size:18px;
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Daily Milk Entry</title>
+
+    <link rel="stylesheet"
+          href="../css/milk-entry.css">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>🥛 Milk Supply</h2>
+
+            <p>Management System</p>
+
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="customer.html">
+                    👥 Customers
+                </a>
+            </li>
+
+            <li class="active">
+                🥛 Daily Milk Entry
+            </li>
+
+            <li>
+                <a href="bills.html">📄 Bills</a>
+                
+            </li>
+
+            <li >
+                <a href="payment.html">💳 Payments</a>
+                
+            </li>
+
+            <li id="logoutBtn">
+                🚪 Logout
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <h2>🥛 Daily Milk Entry</h2>
+
+            <div class="profile">
+
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                    alt="Profile">
+
+                <span>Sandeep</span>
+
+            </div>
+
+        </header>
+
+        <!-- DASHBOARD CARDS -->
+
+        <section class="stats-cards">
+
+            <div class="card">
+
+                <h4>Total Customers</h4>
+
+                <h2 id="totalCustomers">0</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h4>Today's Milk</h4>
+
+                <h2 id="todayMilk">0 L</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h4>Present</h4>
+
+                <h2 id="presentCount">0</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h4>Absent</h4>
+
+                <h2 id="absentCount">0</h2>
+
+            </div>
+
+        </section>
+
+        <!-- DATE SECTION -->
+
+        <section class="date-section">
+
+            <h3>
+
+                Date :
+
+                <span id="currentDate">
+
+                </span>
+
+            </h3>
+
+        </section>
+
+        <!-- DAILY ENTRY TABLE -->
+
+        <section class="entry-card">
+
+            <h2>
+
+                Customer Daily Milk Entry
+
+            </h2>
+
+            <table class="milk-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Customer</th>
+
+                        <th>Phone</th>
+
+                        <th>Present</th>
+
+                        <th>Absent</th>
+
+                        <th>Milk Qty (L)</th>
+
+                        <th>Rate</th>
+
+                        <th>Amount</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="customerTableBody">
+
+                    <!-- Customers loaded from JS -->
+
+                </tbody>
+
+            </table>
+
+            <div class="button-group">
+
+                <button id="saveEntriesBtn">
+
+                    Save Today's Entries
+
+                </button>
+
+                <button id="calculateBillBtn">
+
+                    Calculate Monthly Bill
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- TODAY'S ENTRIES -->
+
+        <section class="entries-card">
+
+            <h2>
+
+                Today's Saved Entries
+
+            </h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Name</th>
+
+                        <th>Phone</th>
+
+                        <th>Status</th>
+
+                        <th>Milk</th>
+
+                        <th>Amount</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="entriesTableBody">
+
+                    <tr>
+
+                        <td colspan="5">
+
+                            No Entries Available
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- MONTHLY BILL SUMMARY -->
+
+        <section class="bill-summary">
+
+            <h2>
+
+                Monthly Bill Summary
+
+            </h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Customer</th>
+
+                        <th>Present Days</th>
+
+                        <th>Absent Days</th>
+
+                        <th>Total Milk</th>
+
+                        <th>Amount</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="billSummaryBody">
+
+                    <tr>
+
+                        <td colspan="5">
+
+                            Click Calculate Monthly Bill
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/milk-entry.js"></script>
+
+</body>
+
+</html>

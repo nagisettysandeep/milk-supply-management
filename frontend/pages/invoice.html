@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Invoice</title>
+
+    <link rel="stylesheet"
+          href="../css/invoice.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="invoice-card">
+
+        <!-- Header -->
+
+        <div class="invoice-header">
+
+            <div>
+
+                <h1>
+                    🥛 Milk Supply Management
+                </h1>
+
+                <p>
+                    Monthly Milk Billing Invoice
+                </p>
+
+            </div>
+
+            <div class="invoice-number">
+
+                <h3>
+                    Invoice No
+                </h3>
+
+                <p id="invoiceNo">
+                    INV-000000
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Customer Details -->
+
+        <div class="customer-section">
+
+            <h2>
+                Customer Details
+            </h2>
+
+            <div class="details-grid">
+
+                <div>
+
+                    <label>
+                        Customer Name
+                    </label>
+
+                    <p id="customerName">
+                        Loading...
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <label>
+                        Mobile Number
+                    </label>
+
+                    <p id="customerMobile">
+                        Loading...
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <label>
+                        Bill Date
+                    </label>
+
+                    <p id="billDate">
+                        Loading...
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <label>
+                        Payment Status
+                    </label>
+
+                    <p id="paymentStatus">
+                        Pending
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bill Details -->
+
+        <div class="bill-section">
+
+            <h2>
+                Bill Summary
+            </h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Total Milk
+                        </th>
+
+                        <th>
+                            Rate
+                        </th>
+
+                        <th>
+                            Amount
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td id="totalMilk">
+                            0 L
+                        </td>
+
+                        <td id="rate">
+                            ₹0
+                        </td>
+
+                        <td id="amount">
+                            ₹0
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Total -->
+
+        <div class="total-section">
+
+            <h2>
+
+                Grand Total :
+
+                <span id="grandTotal">
+
+                    ₹0
+
+                </span>
+
+            </h2>
+
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+
+            <p>
+
+                Thank You For Choosing
+                Milk Supply Management
+
+            </p>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="button-section">
+
+            <button id="printBtn">
+
+                🖨 Print Invoice
+
+            </button>
+
+            <a href="bills.html"
+               class="back-btn">
+
+                ← Back To Bills
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../js/invoice.js"></script>
+
+</body>
+
+</html>

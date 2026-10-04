@@ -1,0 +1,359 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+    background:
+    linear-gradient(
+    135deg,
+    #dbeafe,
+    #e0f2fe,
+    #d1fae5
+    );
+
+    min-height:100vh;
+
+    padding:30px;
+}
+
+.container{
+
+    max-width:1000px;
+
+    margin:auto;
+}
+
+.invoice-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.1);
+}
+
+/* =======================
+   HEADER
+======================= */
+
+.invoice-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom:2px solid #e5e7eb;
+
+    padding-bottom:20px;
+
+    margin-bottom:25px;
+}
+
+.invoice-header h1{
+
+    color:#1e40af;
+
+    margin-bottom:8px;
+}
+
+.invoice-header p{
+
+    color:#64748b;
+}
+
+.invoice-number{
+
+    text-align:right;
+}
+
+.invoice-number h3{
+
+    color:#2563eb;
+
+    margin-bottom:5px;
+}
+
+.invoice-number p{
+
+    font-weight:600;
+
+    color:#111827;
+}
+
+/* =======================
+   CUSTOMER DETAILS
+======================= */
+
+.customer-section{
+
+    margin-bottom:30px;
+}
+
+.customer-section h2{
+
+    color:#1e40af;
+
+    margin-bottom:20px;
+}
+
+.details-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:20px;
+}
+
+.details-grid label{
+
+    display:block;
+
+    color:#64748b;
+
+    margin-bottom:5px;
+
+    font-size:14px;
+}
+
+.details-grid p{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#111827;
+}
+
+/* =======================
+   TABLE
+======================= */
+
+.bill-section{
+
+    margin-bottom:30px;
+}
+
+.bill-section h2{
+
+    color:#1e40af;
+
+    margin-bottom:20px;
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+thead{
+
+    background:#2563eb;
+
+    color:white;
+}
+
+th{
+
+    padding:15px;
+
+    text-align:center;
+}
+
+td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid #e5e7eb;
+}
+
+/* =======================
+   TOTAL
+======================= */
+
+.total-section{
+
+    text-align:right;
+
+    margin-top:20px;
+
+    margin-bottom:30px;
+}
+
+.total-section h2{
+
+    color:#111827;
+}
+
+#grandTotal{
+
+    color:#16a34a;
+
+    font-size:32px;
+}
+
+/* =======================
+   PAYMENT STATUS
+======================= */
+
+#paymentStatus{
+
+    display:inline-block;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    font-weight:600;
+}
+
+/* =======================
+   FOOTER
+======================= */
+
+.footer{
+
+    border-top:2px solid #e5e7eb;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    color:#64748b;
+
+    margin-bottom:25px;
+}
+
+/* =======================
+   BUTTONS
+======================= */
+
+.button-section{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+}
+
+#printBtn{
+
+    border:none;
+
+    background:#16a34a;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+#printBtn:hover{
+
+    background:#15803d;
+}
+
+.back-btn{
+
+    text-decoration:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+.back-btn:hover{
+
+    background:#1d4ed8;
+}
+
+/* =======================
+   MOBILE
+======================= */
+
+@media(max-width:768px){
+
+    .invoice-header{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        text-align:center;
+    }
+
+    .invoice-number{
+
+        text-align:center;
+    }
+
+    .details-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .button-section{
+
+        flex-direction:column;
+    }
+
+    .back-btn,
+    #printBtn{
+
+        width:100%;
+
+        text-align:center;
+    }
+}
+
+/* =======================
+   PRINT
+======================= */
+
+@media print{
+
+    body{
+
+        background:white;
+    }
+
+    .button-section{
+
+        display:none;
+    }
+
+    .invoice-card{
+
+        box-shadow:none;
+
+        border:none;
+    }
+}

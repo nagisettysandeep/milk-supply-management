@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    background-image:url("../images/milkbackground.jpeg");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.login-container{
+    position:relative;
+    z-index:10;
+}
+
+.login-card{
+
+    width:450px;
+    max-width:95vw;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+.signup-link{
+    text-align:center;
+    margin-top:20px;
+    color:white;
+}
+
+.signup-link a{
+    color:#60a5fa;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.signup-link a:hover{
+    text-decoration:underline;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.logo-icon{
+    font-size:50px;
+}
+
+.logo h1{
+    color:white;
+    margin-top:10px;
+    font-size:42px;
+}
+
+.logo p{
+    color:#e5e7eb;
+    margin-top:8px;
+}
+
+.role-selector{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.role-card{
+
+    flex:1;
+
+    background:rgba(255,255,255,.12);
+
+    border:2px solid transparent;
+
+    border-radius:16px;
+
+    text-align:center;
+
+    padding:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.role-card i{
+    font-size:16px;
+    color:white;
+    margin-bottom:10px;
+}
+
+.role-card h3{
+    color:white;
+}
+
+.role-card span{
+    color:#d1d5db;
+    font-size:13px;
+}
+
+.role-card.active{
+    border-color:#3b82f6;
+    background:rgba(59,130,246,.25);
+}
+
+.role-card:hover{
+    transform:translateY(-4px);
+}
+
+.input-group{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:0 15px;
+
+    display:flex;
+    align-items:center;
+
+    margin-bottom:18px;
+}
+
+.input-group i{
+    color:#6b7280;
+}
+
+.input-group input{
+
+    border:none;
+    outline:none;
+
+    width:100%;
+
+    padding:16px 12px;
+
+    font-size:15px;
+}
+
+.login-btn{
+
+    width:100%;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:12px;
+
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.login-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(37,99,235,.35);
+}
+
+@media(max-width:500px){
+
+    .role-selector{
+        flex-direction:column;
+    }
+
+    .login-card{
+        padding:25px;
+    }
+
+    .logo h1{
+        font-size:32px;
+    }
+}

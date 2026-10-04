@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Supply Dashboard</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+            <h2>🥛 Milk Supply</h2>
+            <p>Management System</p>
+        </div>
+
+        <ul class="menu">
+            <li class="active">🏠 Dashboard</li>
+            <li >
+              <a href="customer.html">
+                👥 Customers
+              </a>
+            </li>
+            <li>
+                <a href="milk-entry.html">
+                    🥛 Daily Milk Entry
+                </a>
+            </li>
+            <li>
+                <a href="bills.html">
+                    📄 Bills
+                </a>
+            </li>
+            <li>
+                <a href="payments.html">💳 Payments</a>
+            </li>
+            <li id="logoutBtn">🚪 Logout</li>
+        </ul>
+
+    </aside>
+
+    <main class="main-content" id="mainContent">
+
+        <header class="topbar">
+
+            <button id="menu-Btn" class="menu-btn">
+                ☰
+            </button>
+
+            <div class="top-right">
+
+                <div class="date-card">
+                   <div class="date-icon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                         <path d="M8 2V5M16 2V5M3 9H21M5 4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V6C3 4.89543 3.89543 4 5 4Z"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"/>
+                       </svg>
+                   </div>
+
+                  <div class="date-content">
+                    <span class="date-label">Today</span>
+                    <span id="currentDate" class="date-value"></span>
+                  </div>
+               </div>
+
+                <div class="profile">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+                    <span>Sandeep</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="welcome">
+            <h1>Welcome, Sandeep!</h1>
+            <p>No business data available yet. Start by adding your first customer.</p>
+        </section>
+
+        <section class="profile-cards">
+
+            <div class="card stat-card">
+                <div class="icon blue">👥</div>
+                <div>
+                    <h4>Total Customers</h4>
+                    <h2 id="totalCustomers">0</h2>
+                </div>
+            </div>
+
+            <div class="card stat-card">
+                <div class="icon green">🥛</div>
+                <div>
+                    <h4>Today's Milk Delivered</h4>
+                    <h3 id="todayMilk">0 Liters</h3>
+                </div>
+            </div>
+
+            <div class="card stat-card">
+                <div class="icon orange">₹</div>
+                <div>
+                    <h4>Pending Payments</h4>
+                    <h3 id="pendingCustomers">0 Customers</h3>
+                </div>
+            </div>
+
+            <div class="card stat-card">
+                <div class="icon purple">₹</div>
+                <div>
+                    <h4>Paid Payments</h4>
+                    <h3 id="paidCustomers">0 Customers</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="dashboard-chart">
+
+            <div class="card">
+
+                <div class="chart-header">
+                    <h3>Monthly Overview</h3>
+                </div>
+
+                <div class="chart-area">
+                    <canvas id="revenueChart"></canvas>
+                </div>
+
+            </div>
+
+            
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+</html>
